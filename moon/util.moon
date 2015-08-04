@@ -9,7 +9,7 @@ map = (ls,f)->
 
 foldl = (ls,initv,acc)->
 	for _,l in ipairs(ls)
-		initv = acc(init,l)
+		initv = acc(initv,l)
 	initv
 
 zip = (ls1,ls2)->
