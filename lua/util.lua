@@ -9,7 +9,7 @@ end
 local foldl
 foldl = function(ls, initv, acc)
   for _, l in ipairs(ls) do
-    initv = acc(init, l)
+    initv = acc(initv, l)
   end
   return initv
 end
