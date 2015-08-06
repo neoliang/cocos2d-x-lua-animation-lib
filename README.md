@@ -2,7 +2,8 @@
 a lua lib that wrap animation
 
 # usage
-copy files in directory lua to you cocos2d-x project
+copy files in directory lua to the lua directory of your cocos2d-x project
+warnning: this rep only compatible  with cocos2d-x 2.x
 
 #code 
 ```lua
@@ -18,7 +19,7 @@ local jump = act.seq(
                       act.moveBy(0.5,0,5),
                       act.moveBy(0.5,0,-5)
                     )
---jum by 5 in y in 1
+--jump by 5 in y direction in 1
 
 local repeatlyJum = act.rep(jump)
 -- repeate jump
